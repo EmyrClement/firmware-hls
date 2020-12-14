@@ -55,128 +55,128 @@ void VMRouterTop(BXType bx,
 	;
 
 
-	// LUT with bend-cuts for the TE memories
-	// The cuts are different depending on the memory version (nX)
-	// Indexed using bend bits
-// TE Memory 1
-	ap_uint<1> tmptable1_n1[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE17n1_vmbendcut.tab"
-	;
+// 	// LUT with bend-cuts for the TE memories
+// 	// The cuts are different depending on the memory version (nX)
+// 	// Indexed using bend bits
+// // TE Memory 1
+// 	ap_uint<1> tmptable1_n1[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE17n1_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable1_n2[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE17n2_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable1_n2[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE17n2_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable1_n3[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE17n3_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable1_n3[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE17n3_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable1_n4[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE17n4_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable1_n4[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE17n4_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable1_n5[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE17n5_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable1_n5[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE17n5_vmbendcut.tab"
+// 	;
 
-	// TE Memory 2
-	ap_uint<1> tmptable2_n1[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE18n1_vmbendcut.tab"
-	;
+// 	// TE Memory 2
+// 	ap_uint<1> tmptable2_n1[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE18n1_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable2_n2[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE18n2_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable2_n2[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE18n2_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable2_n3[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE18n3_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable2_n3[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE18n3_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable2_n4[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE18n4_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable2_n4[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE18n4_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable2_n5[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE18n5_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable2_n5[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE18n5_vmbendcut.tab"
+// 	;
 
-	// TE Memory 3
-	ap_uint<1> tmptable3_n1[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE19n1_vmbendcut.tab"
-	;
+// 	// TE Memory 3
+// 	ap_uint<1> tmptable3_n1[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE19n1_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable3_n2[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE19n2_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable3_n2[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE19n2_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable3_n3[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE19n3_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable3_n3[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE19n3_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable3_n4[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE19n4_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable3_n4[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE19n4_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable3_n5[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE19n5_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable3_n5[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE19n5_vmbendcut.tab"
+// 	;
 
-// TE Memory 4
-	ap_uint<1> tmptable4_n1[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE20n1_vmbendcut.tab"
-	;
+// // TE Memory 4
+// 	ap_uint<1> tmptable4_n1[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE20n1_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable4_n2[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE20n2_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable4_n2[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE20n2_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable4_n3[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE20n3_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable4_n3[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE20n3_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable4_n4[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE20n4_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable4_n4[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE20n4_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmptable4_n5[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIE20n5_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmptable4_n5[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIE20n5_vmbendcut.tab"
+// 	;
 					
-	static const ap_uint<1>* bendtable[] = {
-		tmptable1_n1, tmptable1_n2, tmptable1_n3, tmptable1_n4, tmptable1_n5, 
-		tmptable2_n1, tmptable2_n2, tmptable2_n3, tmptable2_n4, tmptable2_n5,
-		tmptable3_n1, tmptable3_n2, tmptable3_n3, tmptable3_n4, tmptable3_n5,
-		tmptable4_n1, tmptable4_n2, tmptable4_n3, tmptable4_n4, tmptable4_n5};
+// 	static const ap_uint<1>* bendtable[] = {
+// 		tmptable1_n1, tmptable1_n2, tmptable1_n3, tmptable1_n4, tmptable1_n5, 
+// 		tmptable2_n1, tmptable2_n2, tmptable2_n3, tmptable2_n4, tmptable2_n5,
+// 		tmptable3_n1, tmptable3_n2, tmptable3_n3, tmptable3_n4, tmptable3_n5,
+// 		tmptable4_n1, tmptable4_n2, tmptable4_n3, tmptable4_n4, tmptable4_n5};
 
 
-	// TE Overlap Memory 1
-	ap_uint<1> tmpextratable1_n1[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIQ9n1_vmbendcut.tab"
-	;
+// 	// TE Overlap Memory 1
+// 	ap_uint<1> tmpextratable1_n1[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIQ9n1_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmpextratable1_n2[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIQ9n2_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmpextratable1_n2[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIQ9n2_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmpextratable1_n3[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIQ9n3_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmpextratable1_n3[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIQ9n3_vmbendcut.tab"
+// 	;
 
-	// TE Overlap Memory 2
-	ap_uint<1> tmpextratable2_n1[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIQ10n1_vmbendcut.tab"
-	;
+// 	// TE Overlap Memory 2
+// 	ap_uint<1> tmpextratable2_n1[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIQ10n1_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmpextratable2_n2[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIQ10n2_vmbendcut.tab"
-	;
+// 	ap_uint<1> tmpextratable2_n2[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIQ10n2_vmbendcut.tab"
+// 	;
 
-	ap_uint<1> tmpextratable2_n3[] =
-#include "../emData/VMR/tables/VMSTE_L1PHIQ10n3_vmbendcut.tab"
+// 	ap_uint<1> tmpextratable2_n3[] =
+// #include "../emData/VMR/tables/VMSTE_L1PHIQ10n3_vmbendcut.tab"
 		
-	static const ap_uint<1>* bendextratable[] = {
-		tmpextratable1_n1, tmpextratable1_n2, tmpextratable1_n3,
-		tmpextratable2_n1, tmpextratable2_n2, tmpextratable2_n3}; // Only used for overlap
+// 	static const ap_uint<1>* bendextratable[] = {
+// 		tmpextratable1_n1, tmpextratable1_n2, tmpextratable1_n3,
+// 		tmpextratable2_n1, tmpextratable2_n2, tmpextratable2_n3}; // Only used for overlap
 
 
 // Takes 2 clock cycles before on gets data, used at high frequencies
@@ -197,22 +197,23 @@ void VMRouterTop(BXType bx,
 // Main function
 
 	// template<regionType InType, regionType OutType, int Layer, int Disk, int MaxAllCopies, int MaxTEICopies, int MaxOLCopies, int MaxTEOCopies>
-	VMRouter<BARRELPS, BARRELPS, layer, disk,  maxAllCopies, maxTEICopies, maxOLCopies, maxTEOCopies, nbitsbin>
+	// VMRouter<BARRELPS, BARRELPS, layer, disk,  maxAllCopies, maxTEICopies, maxOLCopies, maxTEOCopies, nbitsbin>
+	VMRouter<maxAllCopies, layer, disk, BARRELPS, BARRELPS>//, maxTEICopies, maxOLCopies, maxTEOCopies, nbitsbin>
 	(bx, finebintable, phicorrtable, 
-		rzbitstable, rzbitsextratable, nullptr,
-		bendtable, bendextratable, nullptr,
+		// rzbitstable, rzbitsextratable, nullptr,
+		// bendtable, bendextratable, nullptr,
 // Input memories
 		imask, inputStub, nullptr,
 // AllStub memories
 		allStub,
 // ME memories
-		memask, meMemories,
+		memask, meMemories//,
 // TEInner memories
-		teimask, teiMemories,
-// TEInner Overlap memories
-		olmask, olMemories,
-// TEOuter memories
-		teomask, nullptr
+// 		teimask, teiMemories,
+// // TEInner Overlap memories
+// 		olmask, olMemories,
+// // TEOuter memories
+// 		teomask, nullptr
 		);
 
 	return;

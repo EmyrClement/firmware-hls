@@ -114,7 +114,7 @@ public:
 	}
 	else {
 #ifndef __SYNTHESIS__
-	  std::cout << "Warning out of range" << std::endl;
+	  std::cout << "Warning out of range " << nentry_ibx << " " << (1<<(NBIT_ADDR-NBIT_BIN)) << std::endl;
 #endif
 	  return false;
 	}
