@@ -190,22 +190,22 @@ void VMRouterTop(const BXType bx, BXType& bx_o,
 	/////////////////////////
 	// Main function
 
-	VMRouter<inputType, outputType, kLAYER, kDISK,  maxASCopies, maxTEICopies, maxOLCopies, maxTEOCopies, nbitsbin, bendCutTableSize>
+	VMRouter<maxASCopies, kLAYER, kDISK, inputType, outputType, nbitsbin>
 	(bx, bx_o, fineBinTable, phiCorrTable,
-		rzBitsInnerTable, rzBitsOverlapTable, nullptr,
-		bendCutInnerTable, bendCutOverlapTable, nullptr,
+		// rzBitsInnerTable, rzBitsOverlapTable, nullptr,
+		// bendCutInnerTable, bendCutOverlapTable, nullptr,
 		// Input memories
 		maskIS, inputStub, nullptr,
 		// AllStub memories
 		memoriesAS,
 		// ME memories
-		maskME, memoriesME,
+		maskME, memoriesME //,
 		// TEInner memories
-		maskTEI, memoriesTEI,
+		// maskTEI, memoriesTEI,
 		// TEInner Overlap memories
-		maskOL, memoriesOL,
+		// maskOL, memoriesOL,
 		// TEOuter memories
-		maskTEO, nullptr
+		// maskTEO, nullptr
 		);
 
 	return;

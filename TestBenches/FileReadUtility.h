@@ -15,7 +15,7 @@
 
 #include "../TrackletAlgorithm/Constants.h"
 
-bool openDataFile(std::ifstream& file_in, const std::string& file_name, bool print_error = true)
+inline bool openDataFile(std::ifstream& file_in, const std::string& file_name, bool print_error = true)
 {
   file_in.open(file_name);
 
@@ -30,7 +30,7 @@ bool openDataFile(std::ifstream& file_in, const std::string& file_name, bool pri
   return success;
 }
 
-std::vector<std::string> split(const std::string& s, char delimiter)
+inline std::vector<std::string> split(const std::string& s, char delimiter)
 {
   std::vector<std::string> tokens;
   std::string token;
